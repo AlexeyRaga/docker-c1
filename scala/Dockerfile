@@ -10,7 +10,6 @@ RUN add-apt-repository ppa:webupd8team/java -y && \
     find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en' |xargs rm -r && \
     find /usr/share/doc -depth -type f |xargs rm || true && \
     find /usr/share/doc -empty|xargs rmdir || true && \
-    rm -rf /usr/share/man/* /usr/share/groff/* /usr/share/info/* && \
     rm -rf /usr/share/man /usr/share/groff /usr/share/info /usr/share/lintian /usr/share/linda /var/cache/man && \
     rm -rf /var/cache/oracle-jdk7-installer && \
     rm -rf /usr/lib/jvm/java-7-oracle/man && \

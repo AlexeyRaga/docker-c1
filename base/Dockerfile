@@ -4,7 +4,6 @@ MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 RUN apt-get update && \
     apt-get upgrade -y && \ 
     apt-get install -y curl wget && \
-    apt-get install python-software-properties -y && \
     apt-get install software-properties-common -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
