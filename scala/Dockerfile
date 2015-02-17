@@ -3,7 +3,7 @@ MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 
 RUN \
     wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u60-b19/jdk-7u60-linux-arm-vfp-hflt.tar.gz && \
-    tar zxf jdk-7u60-linux-arm-vfp-hflt.tar.gz -C /usr/local/share && rm scala-*.tgz && \
+    tar zxf jdk-7u60-linux-arm-vfp-hflt.tar.gz -C /usr/local/share && rm jdk-*.tar.gz && \
     rm /usr/local/share/jdk1.7.0_60/src.zip && \
     rm -rf /usr/local/share/jdk1.7.0_60/man
 
