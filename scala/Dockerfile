@@ -5,7 +5,7 @@ RUN add-apt-repository ppa:webupd8team/java -y && \
     apt-get update && \
     export DEBIAN_FRONTEND=noninteractive && \
     echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
-    apt-get install oracle-java7-installer -y && \
+    apt-get install oracle-java7-installer oracle-java7-set-default -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en' |xargs rm -r && \
@@ -20,5 +20,6 @@ RUN mkdir -p /usr/local/share && \
     wget http://www.scala-lang.org/files/archive/scala-2.11.5.tgz && \
     tar -xvf scala-2.11.5.tgz -C /usr/local/share && rm scala-*.tgz
 
+ENV JAVA_HOME=/usr/lib/jvm/java-7-oracle
 ENV SCALA_HOME=/usr/local/share/scala-2.11.5
 ENV PATH=$SCALA_HOME/bin:$PATH
