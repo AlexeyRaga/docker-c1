@@ -19,6 +19,5 @@ RUN mkdir -p /usr/local/share && \
     wget http://www.scala-lang.org/files/archive/scala-2.11.5.tgz && \
     tar -xvf scala-2.11.5.tgz -C /usr/local/share && rm scala-*.tgz
 
-
 ENV SCALA_HOME=/usr/local/share/scala-2.11.5
 ENV PATH=$SCALA_HOME/bin:$PATH

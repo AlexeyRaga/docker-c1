@@ -4,7 +4,7 @@ MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 RUN apt-get update && \
     apt-get upgrade -y && \ 
     apt-get install -y curl wget && \
-    apt-get install software-properties-common -y && \
+    apt-get install python-software-properties software-properties-common -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     find /usr/share/locale -mindepth 1 -maxdepth 1 ! -name 'en' |xargs rm -r && \
