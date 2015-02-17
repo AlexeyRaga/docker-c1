@@ -3,6 +3,7 @@ MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 
 RUN add-apt-repository ppa:webupd8team/java -y && \
     apt-get update && \
+    export DEBIAN_FRONTEND=noninteractive && \
     echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
     apt-get install oracle-java7-installer -y && \
     apt-get clean && \

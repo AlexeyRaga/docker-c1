@@ -3,6 +3,7 @@ MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 
 RUN apt-get update && \
     apt-get upgrade -y && \ 
+    export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y curl wget && \
     apt-get install python-software-properties software-properties-common -y && \
     apt-get clean && \
