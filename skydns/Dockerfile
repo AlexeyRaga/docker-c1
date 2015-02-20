@@ -7,7 +7,7 @@ RUN \
     go get github.com/skynetservices/skydns && \
     cd $GOPATH/src/github.com/skynetservices/skydns && go build -v && \
     mv $GOPATH/src/github.com/skynetservices/skydns/skydns /usr/local/bin/ && \
-    apt-get autoremove git-core mercurial golang python2.7 perl-modules perl liberror-perl libgdbm3 ucf -y && \
+    apt-get autoremove git-core mercurial golang perl-modules perl liberror-perl libgdbm3 ucf -y && \
     rm -rf $GOPATH && unset GOPATH && \
     ./usr/local/bin/clean.sh
 
