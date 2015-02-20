@@ -1,4 +1,4 @@
-FROM alexeyraga/armhf-ubuntu-c1:latest
+FROM alexeyraga/armhf-ubuntu:latest
 MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 
 RUN \

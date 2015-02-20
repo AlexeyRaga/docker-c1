@@ -1,4 +1,4 @@
-FROM alexeyraga/armhf-ubuntu-spark:latest
+FROM alexeyraga/armhf-spark:latest
 MAINTAINER Alexey Raga <alexey.raga@gmail.com>
 
 COPY bootstrap.sh /etc/bootstrap.sh
