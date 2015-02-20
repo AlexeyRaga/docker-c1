@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-docker build -t alexeyraga/armf-go ${DIR}
+docker build -t alexeyraga/armhf-go ${DIR}
