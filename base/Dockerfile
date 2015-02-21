@@ -6,7 +6,7 @@ RUN chown root.root /usr/local/bin/clean.sh && chmod 700 /usr/local/bin/clean.sh
 
 RUN \
     apt-get update && \
-    apt-get install -y curl wget vim && \
+    apt-get install -y curl wget vim supervisor && \
     apt-get clean && \
     /usr/local/bin/clean.sh
 
